@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>ukriu!spaceInvaders</title>
+      <!-- Primary Meta Tags -->
+      <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="index, follow">
+      <meta name="title" content="ukriu!spaceInvaders">
+      <meta name="description" content="My own iteration of the classic Space Invaders game but with a twist of textures!">
+      <meta name="theme-color" content="#000000">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:title" content="ukriu!spaceInvaders">
+      <meta property="og:description" content="My own iteration of the classic Space Invaders game but with a twist of textures!">
+      <meta property="og:url" content="https://spaceinvaders.ukriu.com/res/meta-img.png">
+      <meta property="og:image" content="https://spaceinvaders.ukriu.com/res/meta-img.png">
+      <meta property="og:image:alt" content="Title image">
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+	  <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="https://ukriu.com/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://ukriu.com/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://ukriu.com/favicon/favicon-16x16.png">
+      <link rel="manifest" href="https://ukriu.com/favicon/site.webmanifest">
+	  
+      <link rel="stylesheet" href="res/style.css">
+      <link rel="stylesheet" href="https://ukriu.com/res/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	  <script src="res/code-handler.js"></script>
+   </head>
+   <body>
+      <div class="mainGame">
+         <header>
+            <h1>ukriu!spaceInvaders</h1>
+         </header>
+         <p>Either enter a Custom Game Code below or play the base game!</p>
+         <a class="btn" href="game">Base Game</a><br><br>
+         <div id="codeArea"><input type="text" id="code-input" placeholder="Enter Custom Code"><button onclick="handleCode()">Enter</button></div>
+         <p id="error-message"></p>
+      </div>
+   </body>
+</html>

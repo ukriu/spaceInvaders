@@ -1,0 +1,86 @@
+* {
+  font-family: "fixedsys_excelsior_3.01Rg", monospace;
+  color: lavenderblush;
+}
+
+:root {
+	--invader-bg: purple;
+	--shooter-bg: green;
+	--laser-bg: orange;
+	--boom-bg: crimson;
+}
+
+.invader {
+  background: var(--invader-bg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.shooter {
+  background: var(--shooter-bg);
+  background-size: cover;
+  background-position: center;
+}
+
+.laser {
+  background: var(--laser-bg);
+  background-size: cover;
+  background-position: center;
+  outline: 1px solid orange;
+}
+
+.boom {
+  background: var(--boom-bg);
+  background-size: cover;
+  background-position: center;
+  outline: 1px solid crimson;
+}
+
+button,
+a.btn {
+  padding: 16px;
+  border: 1px dotted violet;
+  background: none;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  background-color: transparent;
+  border: 1px solid lavenderblush;
+  box-sizing: border-box;
+}
+
+#error-message {
+  color: crimson;
+}
+
+.grid {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.mainGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+div#codeArea {
+  display: flex;
+  gap: 1em;
+}
