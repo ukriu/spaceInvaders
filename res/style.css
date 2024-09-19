@@ -5,44 +5,60 @@
 
 :root {
 	--invader-bg: purple;
-	--shooter-bg: green;
-	--laser-bg: orange;
+	--shooter-bg: lavenderblush;
+	--laser-bg: firebrick;
 	--boom-bg: crimson;
 }
-
-.invader {
+.view {
+  height: 100%;
+  width: 100%;
+}
+.invader > .view {
   background: var(--invader-bg);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  outline: 0.4px solid purple;
+  height: 93%;
+  width: 93%;
 }
 
-.shooter {
+.shooter > .view{
   background: var(--shooter-bg);
   background-size: cover;
   background-position: center;
+  height: 94%;
+  width: 94%;
+  outline: 0.5px solid lavenderblush;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-.laser {
+.laser > .view {
   background: var(--laser-bg);
   background-size: cover;
   background-position: center;
-  outline: 1px solid orange;
+  outline: 0.5px solid orange;
+  width: 58%;
+  height: 94%;
+  border-radius: 8px;
 }
 
-.boom {
+.boom > .view {
   background: var(--boom-bg);
   background-size: cover;
   background-position: center;
-  outline: 1px solid crimson;
+  outline: 0.7px solid crimson;
+  height: 94%;
+  width: 94%;
+  border-radius: 8px;
 }
 
-button,
 a.btn {
   padding: 16px;
   border: 1px dotted violet;
   background: none;
-  color: white;
+  color: lavenderblush;
+  user-select: none;
 }
 
 input {
@@ -66,9 +82,12 @@ input {
   margin-top: 20px;
 }
 
-.grid div {
+.grid > div {
   width: 20px;
   height: 20px;
+  display: grid;
+  place-items: center;
+  position: realitive;
 }
 
 .mainGame {
